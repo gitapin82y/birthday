@@ -5,6 +5,7 @@ body {
   font-family: "Bad Script", cursive;
   letter-spacing: 1.2px;
   font-size: 20px;
+  padding-bottom: 140px;
 }
 h1 {
   font-family: "Shrikhand", cursive;
@@ -20,7 +21,9 @@ nav a {
   margin: 0 10px;
   font-weight: bold;
 }
-
+#endSection img {
+  border-radius: 20px;
+}
 #header {
   margin-bottom: 140px;
 }

@@ -57,13 +57,13 @@ function catString(cn) {
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "ETNIS" && tipe == "d2") {
+  } else if (concat.toUpperCase() == "BCA" && tipe == "m1") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "ADERA" && tipe == "d3") {
+  } else if (concat.toUpperCase() == "ADERA" && tipe == "d2") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "LAMPUNG" && tipe == "d4") {
+  } else if (concat.toUpperCase() == "TKA" && tipe == "m2") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "LALAB" && tipe == "d5") {
+  } else if (concat.toUpperCase() == "RAM" && tipe == "m3") {
     pengulanganTabel(tabel);
   }
 }
@@ -129,13 +129,13 @@ function catString(cn) {
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "ETNIS" && tipe == "d2") {
+  } else if (concat.toUpperCase() == "BCA" && tipe == "m1") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "ADERA" && tipe == "d3") {
+  } else if (concat.toUpperCase() == "ADERA" && tipe == "d2") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "LAMPUNG" && tipe == "d4") {
+  } else if (concat.toUpperCase() == "TKA" && tipe == "m2") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "LALAB" && tipe == "d5") {
+  } else if (concat.toUpperCase() == "RAM" && tipe == "m3") {
     pengulanganTabel(tabel);
   }
 }
