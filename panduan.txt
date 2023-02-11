@@ -1,0 +1,6 @@
+panduan tts
+1.  kamu bisa secara langsung atau klik tombol pilih pada setiap soal untuk menjawab clue yang diberikan
+2. untuk mengubah atau menghapus column, hapus class html 'block' pada modal #cross
+3. untuk mengubah jawaban tts agar sesuai dengan soal modifikasi file tts.js yang saya berikan command 'modif jawaban' (terdapat 2 command, ubah keduanya)
+---------------------------------------
+note no.3 -> sesuaikan class html yang ada pada table>td class d1 menandakan bahwa soal 1, d2 menandakan bahwa soal2 dan seterusnya.

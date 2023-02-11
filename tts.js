@@ -53,7 +53,7 @@ function catString(cn) {
   }
   return concat;
 }
-
+// modif jawaban
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
     pengulanganTabel(tabel);
@@ -125,7 +125,7 @@ function catString(cn) {
   }
   return concat;
 }
-
+// modif jawaban
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
     pengulanganTabel(tabel);
