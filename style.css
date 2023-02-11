@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Bad Script", cursive;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 52px;
+}
+
+nav a:hover {
+  color: #50539f !important;
+  font-weight: bold;
+}
+nav a {
+  font-family: "Courier New";
+  margin: 0 10px;
+}
+#header {
+  margin-bottom: 140px;
+}
+#forYou {
+  background-color: #50539f;
+  padding: 100px 0;
+}
+#forYou:hover {
+  cursor: pointer;
+}
+#forYou img {
+  height: 140px !important;
+}
+#forYou h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+#gallery {
+  margin: 100px 0;
+}
+#gallery img {
+  margin-top: 40px;
+  width: 100%;
+  height: 36vh;
+  border-radius: 30px;
+}
+#gallery .item {
+  position: relative;
+  cursor: pointer;
+}
+#gallery .item .caption {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  display: flex;
+  padding: 0 10px;
+  color: white;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 36vh;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#gallery .item:hover .caption {
+  opacity: 1;
+  transition: 0.3s;
+}
+.card-item {
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 18rem;
+  background-color: white;
+}
+.card-item:nth-child(1) {
+  background-color: #dee3f4;
+}
+.card-item:nth-child(2) {
+  background-color: #e4c1e1;
+}
+.card-item:nth-child(3) {
+  background-color: #d5e6e7;
+}
+.card-item:nth-child(1) > a {
+  background-color: #6f8be7;
+}
+.card-item:nth-child(2) > a {
+  background-color: #d95ece;
+}
+.card-item:nth-child(3) > a {
+  background-color: #55dde5;
+}
+.btn-main {
+  border-radius: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New";
+}
+
+/* for you wave */
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+/* end */
