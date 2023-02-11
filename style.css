@@ -20,6 +20,7 @@ nav a {
   margin: 0 10px;
   font-weight: bold;
 }
+
 #header {
   margin-bottom: 140px;
 }
@@ -267,6 +268,31 @@ nav a {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+table {
+  text-align: center;
+}
+#cross {
+  font-family: "Courier New";
+  font-size: 18px;
+}
+td {
+  width: 40px;
+  height: 40px;
+}
+
+td input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.block {
+  background-color: #000;
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
