@@ -57,29 +57,13 @@ function catString(cn) {
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "BCA" && tipe == "m1") {
-    pengulanganTabel(tabel);
   } else if (concat.toUpperCase() == "ETNIS" && tipe == "d2") {
     pengulanganTabel(tabel);
   } else if (concat.toUpperCase() == "ADERA" && tipe == "d3") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "TKA" && tipe == "m2") {
-    pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "RAM" && tipe == "m3") {
-    pengulanganTabel(tabel);
   } else if (concat.toUpperCase() == "LAMPUNG" && tipe == "d4") {
     pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "EROPA" && tipe == "m4") {
-    pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "NOBEL" && tipe == "m5") {
-    pengulanganTabel(tabel);
   } else if (concat.toUpperCase() == "LALAB" && tipe == "d5") {
-    pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "LAN" && tipe == "m6") {
-    pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "AREN" && tipe == "d6") {
-    pengulanganTabel(tabel);
-  } else if (concat.toUpperCase() == "BALI" && tipe == "d7") {
     pengulanganTabel(tabel);
   }
 }
@@ -144,6 +128,14 @@ function catString(cn) {
 
 function submitString(concat, tipe, tabel) {
   if (concat.toUpperCase() == "ABC" && tipe == "d1") {
+    pengulanganTabel(tabel);
+  } else if (concat.toUpperCase() == "ETNIS" && tipe == "d2") {
+    pengulanganTabel(tabel);
+  } else if (concat.toUpperCase() == "ADERA" && tipe == "d3") {
+    pengulanganTabel(tabel);
+  } else if (concat.toUpperCase() == "LAMPUNG" && tipe == "d4") {
+    pengulanganTabel(tabel);
+  } else if (concat.toUpperCase() == "LALAB" && tipe == "d5") {
     pengulanganTabel(tabel);
   }
 }
