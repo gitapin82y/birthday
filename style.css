@@ -1,11 +1,12 @@
+html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: "Bad Script", cursive;
   letter-spacing: 1.2px;
   font-size: 20px;
-  padding-bottom: 140px;
 }
 h1 {
   font-family: "Shrikhand", cursive;
@@ -49,9 +50,59 @@ nav a {
   margin-top: 10px;
 }
 #gallery {
-  margin: 100px 0;
+  padding: 100px 0;
+  position: relative !important;
 }
-#gallery img {
+.sectionKado {
+  position: absolute !important;
+  width: 100%;
+  height: auto !important;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.opacityKado {
+  animation: minOpacity 0.6s ease-in forwards !important;
+}
+@keyframes minOpacity {
+  to {
+    opacity: 0;
+  }
+}
+.showGallery {
+  animation: addOpacity 1s 0.6s ease-in forwards !important;
+}
+@keyframes addOpacity {
+  to {
+    opacity: 1;
+  }
+}
+#gallery .container {
+  opacity: 0;
+  display: none;
+}
+.letterForYou {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.position-center {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+  position: absolute;
+}
+.backgroundLetter {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+#gallery .container img {
   margin-top: 40px;
   width: 100%;
   height: 36vh;
@@ -59,7 +110,6 @@ nav a {
 }
 #gallery .item {
   position: relative;
-  cursor: pointer;
 }
 #gallery .item .caption {
   position: absolute;
@@ -83,7 +133,18 @@ nav a {
   opacity: 1;
   transition: 0.3s;
 }
-
+.back {
+  font-family: "Courier New";
+  padding: 20px;
+  background-color: #36404e;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 20px;
+  position: relative;
+  top: 30px;
+  margin-top: 200px !important;
+}
 .card-item {
   padding: 40px;
   border-radius: 10px;
