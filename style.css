@@ -28,10 +28,55 @@ nav a {
 #header {
   margin-bottom: 140px;
 }
+.animation-bottom {
+  transform: translateY(50px);
+  opacity: 0;
+}
+.animation-top {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+}
+.animation-top1 {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+.animation-top2 {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.6s;
+}
+.animation-top3 {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.9s;
+}
+#header h1 {
+  font-size: 82px;
+}
+.video {
+  position: absolute;
+  height: 400px;
+  margin-left: 140px;
+  margin-top: 100px;
+}
 #forYou {
   background-color: #50539f;
   padding: 100px 0;
   margin-top: -40px;
+}
+.btn-audio {
+  background-color: #50539f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  color: white;
 }
 #forYou .card-item {
   margin-top: 30px;
@@ -50,8 +95,12 @@ nav a {
   margin-top: 10px;
 }
 #gallery {
-  padding: 100px 0;
   position: relative !important;
+}
+#gallery .background {
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
 }
 .sectionKado {
   position: absolute !important;
@@ -78,8 +127,12 @@ nav a {
     opacity: 1;
   }
 }
+.button::hover {
+  cursor: pointer !important;
+}
 #gallery .container {
   opacity: 0;
+  padding-top: 100px;
   display: none;
 }
 .letterForYou {
@@ -184,6 +237,7 @@ nav a {
   position: absolute;
   width: 380px;
   height: 600px;
+  z-index: -1;
   left: 100px;
   overflow: hidden;
 }

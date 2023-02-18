@@ -54,16 +54,22 @@
       <section id="header">
         <div class="container">
           <div class="row">
-            <div
-              class="col-12 col-md-6 align-self-center text-center"
-              data-aos="fade-up"
-            >
-              <h1>Happy Birthday</h1>
-              <h5 class="my-4">To My Dear</h5>
-              <h2>Nama Lengkap</h2>
+            <div class="col-12 col-md-6 align-self-center text-center">
+              <h1 class="animation-bottom">Happy Birthday</h1>
+              <h5 class="my-4 animation-bottom">To You</h5>
+              <h2 class="animation-bottom">Nama Lengkap</h2>
+              <button class="btn-audio button animation-bottom">
+                Play Sound
+              </button>
+              <audio id="myAudio">
+                <source src="assets/images/audio.mp3" type="audio/mpeg" />
+              </audio>
             </div>
-            <div class="col-12 col-md-6" data-aos="fade-up">
-              <img src="assets/images/header.png" class="w-100" />
+            <div class="col-12 col-md-6">
+              <img
+                src="assets/images/header.png"
+                class="w-100 animation-bottom"
+              />
             </div>
           </div>
         </div>
@@ -155,6 +161,7 @@
       </section>
 
       <section id="gallery">
+        <img src="assets/images/gallery/background.png" class="background" />
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-6 text-center" data-aos="fade-up">
@@ -168,42 +175,42 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image1.png" alt="" />
                 <div class="caption"><p>Lorem ipsum dolor sit amet</p></div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image2.png" alt="" />
                 <div class="caption">
                   <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image3.png" alt="" />
                 <div class="caption"><p>Lorem ipsum dolor sit amet</p></div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image4.png" alt="" />
                 <div class="caption">
                   <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image5.png" alt="" />
                 <div class="caption"><p>Lorem ipsum dolor sit amet</p></div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="item" data-aos="fade-up">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="item">
                 <img src="assets/images/gallery/image6.png" alt="" />
                 <div class="caption">
                   <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
@@ -222,7 +229,7 @@
       <!-- <section id="endSection">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 mt-4 col-md-6" data-aos="fade-up">
+          <div class="col-12 mt-4 col-md-6" >
             <img
               src="assets/images/avatar.jpg"
               class="w-100"
@@ -230,7 +237,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 mt-4 col-md-6" data-aos="fade-up">
+          <div class="col-12 mt-4 col-md-6" >
             <h1>Title</h1>
             <p>
               Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -497,9 +504,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-      AOS.init();
+      $(".btn-audio").click(() => $("#myAudio")[0].play());
+      $(document).ready(function () {
+        $("h1.animation-bottom").addClass("animation-top");
+        $("img.animation-bottom").addClass("animation-top");
+        $("h5.animation-bottom").addClass("animation-top1");
+        $("h2.animation-bottom").addClass("animation-top2");
+        $("button.animation-bottom").addClass("animation-top3");
+      });
       var aText = new Array(
         "There are only 10 types of people in the world:",
         "Those who understand binary, and those who don't"
@@ -564,6 +578,10 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="tts.js"></script>
   </body>
 </html>
